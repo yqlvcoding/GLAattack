@@ -1,0 +1,1 @@
+{"data_location": "/share/common/ImageDatasets/imagenet_2012/", "eval_datasets": ["ImageNet"], "results_db": "attack.json", "batch_size": 2048, "model": "ViT-B/32", "freeze_encoder": false, "load": "/share/home/lyq/wise-ft/myfinetunemodel/wise_ft_alpha=0.700.pt", "device": "cuda", "ImageNet:top1": 0.77612}

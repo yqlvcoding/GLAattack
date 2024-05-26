@@ -8,18 +8,18 @@ Image classification (Tuned by myself, \cite: [[Wise-FT](https://github.com/mlfo
 Video recognition    (model and config from, \cite: [[ActionCLIP](https://github.com/sallymmx/ActionCLIP)])<br>
 Video-text retrieval (model and config from, \cite: [[ClIP2Video](https://github.com/CryhanFang/CLIP2Video)])<br>
 
-#### For generate adv examples (todo: some absolute path in code should be exchanged):
-Image classification: (e.g.) < br >
-                 python attack.py --downstream_task ImagenetCLS --generate_model_name 'ViT-B/16' --attack 'GLA' \< br >
-                 --use_adam 1 --clean_datapath 'image_path' \< br >
-                 --results_path 'path' --batch_size 192 \< br >
-                 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4< br >
-Video recognition: (e.g.)< br >
-                 python attack.py --generate_model_name 'ViT-B/16' --attack 'GLA'  --mid_layer 4 --patch_size 16 --use_adam 1  --steps 60< br >
-Video-text retrieval: (e.g.)< br >
-                 python attack.py --downstream_task CLIP2Video --generate_model_name 'ViT-B/16' --attack 'GLA' \< br >
-                 --use_adam 1  --clean_datapath 'clean_correct_path' \< br >
-                 --results_path 'result_path' --batch_size 18 \< br >
-                 --overwrite 1 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4< br >
+#### For generating adv examples (todo: some absolute path in code should be exchanged):
+Image classification: (e.g.) <br>
+                 python attack.py --downstream_task ImagenetCLS --generate_model_name 'ViT-B/16' --attack 'GLA' \<br>
+                 --use_adam 1 --clean_datapath 'image_path' \<br>
+                 --results_path 'path' --batch_size 192 \<br>
+                 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4<br>
+Video recognition: (e.g.)<br>
+                 python attack.py --generate_model_name 'ViT-B/16' --attack 'GLA'  --mid_layer 4 --patch_size 16 --use_adam 1  --steps 60<br>
+Video-text retrieval: (e.g.)<br>
+                 python attack.py --downstream_task CLIP2Video --generate_model_name 'ViT-B/16' --attack 'GLA' \<br>
+                 --use_adam 1  --clean_datapath 'clean_correct_path' \<br>
+                 --results_path 'result_path' --batch_size 18 \<br>
+                 --overwrite 1 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4<br>
 
                 

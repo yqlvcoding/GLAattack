@@ -4,9 +4,9 @@ Lv, Yiqiang, et al. "Downstream Task-agnostic Transferable Attacks on Language-I
 
 
 #### Target model weight can be downloaded from: [[address](https://pan.baidu.com/s/1fQy9Xms-iS0qeQezzz46Qg?pwd=0000)]
-Image classification (Tuned by myself, \cite: [[Wise-FT](https://github.com/mlfoundations/wise-ft/tree/master)])< br >
-Video recognition    (model and config from, \cite: [[ActionCLIP](https://github.com/sallymmx/ActionCLIP)])< br >
-Video-text retrieval (model and config from, \cite: [[ClIP2Video](https://github.com/CryhanFang/CLIP2Video)])< br >
+Image classification (Tuned by myself, \cite: [[Wise-FT](https://github.com/mlfoundations/wise-ft/tree/master)])<br>
+Video recognition    (model and config from, \cite: [[ActionCLIP](https://github.com/sallymmx/ActionCLIP)])<br>
+Video-text retrieval (model and config from, \cite: [[ClIP2Video](https://github.com/CryhanFang/CLIP2Video)])<br>
 
 #### For generate adv examples (todo: some absolute path in code should be exchanged):
 Image classification: (e.g.) < br >

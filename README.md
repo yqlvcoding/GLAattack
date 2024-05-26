@@ -1,4 +1,4 @@
-**# Downstream Task-agnostic Transferable Attacks on Language-Image Pre-training Models**
+# Downstream Task-agnostic Transferable Attacks on Language-Image Pre-training Models**
 
 The project page for the paper:
 
@@ -8,7 +8,7 @@ Lv, Yiqiang, et al. "Downstream Task-agnostic Transferable Attacks on Language-I
 
 
 
-**#### Target model weight can be downloaded from: [[****address****](**https://pan.baidu.com/s/1fQy9Xms-iS0qeQezzz46Qg?pwd=0000**)]**
+#### Target model weight can be downloaded from: [[address](https://pan.baidu.com/s/1fQy9Xms-iS0qeQezzz46Qg?pwd=0000)]
 
 Image classification (Tuned by myself, cite: [[Wise-FT](https://github.com/mlfoundations/wise-ft/tree/master)])<br>
 
@@ -18,18 +18,15 @@ Video-text retrieval (model and config from, cite: [[ClIP2Video](https://github.
 
 
 
-**#### For generating adv examples (todo: some absolute path in code should be exchanged):**
+#### For generating adv examples (todo: some absolute path in code should be exchanged):**
 
 Image classification: (e.g.) <br>
 
 ```text
 python attack.py --downstream_task ImagenetCLS --generate_model_name 'ViT-B/16' --attack 'GLA' \
-
-				 --use_adam 1 --clean_datapath 'image_path' \
-
-			     --results_path 'path' --batch_size 192 \
-
-			     --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4
+		 --use_adam 1 --clean_datapath 'image_path' \
+                 --results_path 'path' --batch_size 192 \
+		 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4
 ```
 
 
@@ -44,12 +41,9 @@ Video-text retrieval: (e.g.)<br>
 
 ```text
 python attack.py --downstream_task CLIP2Video --generate_model_name 'ViT-B/16' --attack 'GLA' \
-
-				 --use_adam 1  --clean_datapath 'clean_correct_path' \
-
-			     --results_path 'result_path' --batch_size 18 \<br>
-
-				 --overwrite 1 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4
+                 --use_adam 1  --clean_datapath 'clean_correct_path' \
+		 --results_path 'result_path' --batch_size 18 \
+		 --overwrite 1 --cpu_num 8  --patch_size 16 --steps 60  --mid_layer 4
 ```
 
 
